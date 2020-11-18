@@ -1,34 +1,37 @@
 # Project Name
 
-This repository is a final project (Java GUI) from Object-Oriented Programming Class, Teknik Informatika Universitas Padjadjaran. 
+This repository is a final project (Java GUI) from Object-Oriented Programming Class, Teknik Informatika Universitas Padjadjaran.
 
 [Challenge Guidelines](challenge-guideline.md)
 
 **Please create a description for this project here**
 
 ## Credits
-| NPM           | Name        |
-| ------------- |-------------|
-| 140810xx00xx  | John Doe    |
-| 140810xx00xx  | Jane Doe    |
-| 140810xx00xx  | Lorem Ipsum |
+
+| NPM          | Name                           |
+| ------------ | ------------------------------ |
+| 140810190005 | Mohamad Fahrio Ghanial Fatihah |
+| 140810190033 | Chandra Wijaya                 |
+| 140810190045 | Adam Din Naufan                |
 
 ## Change log
-- **[Sprint Planning](changelog/sprint-planning.md) - (planning date)** 
-   -  Short changes 1
-   - Short changes 2
 
-- **[Sprint 1](changelog/sprint-1.md) - (date from x until x)** 
-   - Short changes 1
-   - Short changes 2
+- **[Sprint Planning](changelog/sprint-planning.md) - (18/11/2020)**
 
-- **[Sprint 2](changelog/sprint-2.md) - (date from x until x)** 
-   - Short changes 1
-   - Short changes 2
-   
-- **[Sprint 3](changelog/sprint-3.md) - (date from x until x)** 
-   - Short changes 1
-   - Short changes 2
+  - Short changes 1
+  - Short changes 2
+
+- **[Sprint 1](changelog/sprint-1.md) - (18/11/2020 - 24/11/2020)**
+
+  - Short changes 1
+  - Short changes 2
+
+- **[Sprint 2](changelog/sprint-2.md) - (25/11/2020 - 1/12/2020)**
+  - Short changes 1
+  - Short changes 2
+- **[Sprint 3](changelog/sprint-3.md) - (2/12/2020 - 8/12/2020)**
+  - Short changes 1
+  - Short changes 2
 
 ## Running The App
 
