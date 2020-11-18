@@ -2,7 +2,7 @@
 
 | 18/11/2020
 
-### Team (Insert your name)
+### Team BangsKuy (Kelompok 3)
 
 | NPM          | Name                           |
 | ------------ | ------------------------------ |
