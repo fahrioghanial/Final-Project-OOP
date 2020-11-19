@@ -22,9 +22,12 @@ estimasi harganya lalu akan ditampilkan rute jalan user ke tempat tujuan. Kemudi
   - Berdiskusi membentuk Challenge Guidelines, dan menentukan sprint backlog
 
 - **[Sprint 1](changelog/sprint-1.md) - (18/11/2020 - 24/11/2020)**
-
-  - Short changes 1
-  - Short changes 2
+  - Membuat drawing board                                
+  - Membuat indikator map                                
+  - Membuat indikator user                     
+  - Membuat indikator driver    
+  - Membuat input koordinat dan button konfirmasi        
+  - Membuat button history    
 
 - **[Sprint 2](changelog/sprint-2.md) - (25/11/2020 - 1/12/2020)**
   - Short changes 1
