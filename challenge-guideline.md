@@ -24,7 +24,6 @@ B. Setelah app berjalan
 
 C. Batasan lainnya
 - Data history akan direset ketika aplikasi ditutup
-- Jika ada batasan atau fitur tambahan lain, tolong deskripsikan kepada asprak (akan menjadi nilai lebih)
 
 D. Challenge ideas (optional)
 - Buat animasi ketika driver menghampiri user
