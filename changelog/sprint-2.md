@@ -1,5 +1,5 @@
 # Scrum Report (Sprint 2)
-| From 18/11/2020 to 24/11/2020
+| From 25/11/2020 to 1/12/2020
 
 ## Team (Insert your name)
 | NPM          | Name                           |
