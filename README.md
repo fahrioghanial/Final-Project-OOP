@@ -4,7 +4,8 @@ This repository is a final project (Java GUI) from Object-Oriented Programming C
 
 [Challenge Guidelines](challenge-guideline.md)
 
-**Please create a description for this project here**
+Go-Ride adalah aplikasi yang mensimulasikan pelayanan ojek online dimana pengguna memesan driver kemudian akan ditampilkan nama driver terdekat beserta 
+estimasi harganya lalu akan ditampilkan rute jalan user ke tempat tujuan. Kemudian driver akan mengantarkan pengguna ke tempat tujuan. 
 
 ## Credits
 
