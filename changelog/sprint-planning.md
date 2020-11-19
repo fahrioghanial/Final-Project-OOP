@@ -13,7 +13,7 @@
 ## Sprint Backlog Keseluruhan
 
 | ID  | Title/Desc                                           | Asignee  |
-| --- | :--------------------------------------------------: | -------- |
+| --- | ---------------------------------------------------- | -------- |
 | 1.1 | Membuat drawing board                                | Fahrio   |
 | 1.2 | Membuat indikator map                                | Fahrio   |
 | 1.3 | Membuat indikator user                               | Adam     |
