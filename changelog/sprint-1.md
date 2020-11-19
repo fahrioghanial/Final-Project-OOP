@@ -2,11 +2,11 @@
 | From 18/11/2020 to 24/11/20020
 
 ## Team BangsKuy
-| NPM           | Name             |
-| ------------- |------------------|
-| 140810190005  | M. Fahrio Ghanial|
-| 140810190033  | Chandra Wijaya   |
-| 140810190045  | Adam Din Naufan  |
+| NPM           | Name                          |
+| ------------- |-------------------------------|
+| 140810190005  | Mohamad Fahrio Ghanial Fatihah|
+| 140810190033  | Chandra Wijaya                |
+| 140810190045  | Adam Din Naufan               |
 
 ## Sprint Overview
 | Planned (n)   | Completed (n) |
