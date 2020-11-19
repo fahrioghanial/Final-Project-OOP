@@ -19,7 +19,7 @@ estimasi harganya lalu akan ditampilkan rute jalan user ke tempat tujuan. Kemudi
 
 - **[Sprint Planning](changelog/sprint-planning.md) - (18/11/2020)**
 
-  - Berdiskusi membentuk Challange Guidelines, dan menentukan sprint backlog
+  - Berdiskusi membentuk Challenge Guidelines, dan menentukan sprint backlog
 
 - **[Sprint 1](changelog/sprint-1.md) - (18/11/2020 - 24/11/2020)**
 
