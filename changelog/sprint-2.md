@@ -11,14 +11,15 @@
 ## Sprint Overview
 | Planned (n)   | Completed (n) |
 | ------------- |-------------- |
-| n             | n             |
+| 3             | n             |
 
 ## Sprint 2 Backlog
 
-| ID  | Title/Desc | Asignee | Status |
-| --- | ---------- | ------- | ------ |
-| 2.1 | Preparing the x | Jane Doe | DONE |
-| 2.2 | Make the x | John Doe | FAILED |
+| ID  | Title/Desc                                                                   | Asignee | Status |
+| --- | ---------------------------------------------------------------------------- | ------- | ------ |
+| 2.1 | Membuat window yang menampilkan driver terdekat dan estimasi harga           | Adam    | ?????? |
+| 2.2 | Membuat window yang menampilkan rute jalan                                   | Chandra | ?????? |
+| 2.3 | Membuat button proceed layanan go-ride dan membuat algoritma proceed layanan | Fahrio  | ?????? |
 
 ## Retrospective 
 
