@@ -30,8 +30,10 @@ estimasi harganya lalu akan ditampilkan rute jalan user ke tempat tujuan. Kemudi
   - Membuat button history    
 
 - **[Sprint 2](changelog/sprint-2.md) - (25/11/2020 - 1/12/2020)**
-  - Short changes 1
-  - Short changes 2
+  - Membuat window yang menampilkan driver terdekat dan estimasi harga	
+  - Membuat window yang menampilkan rute jalan	
+	- Membuat button proceed layanan go-ride dan membuat algoritma proceed layanan
+  
 - **[Sprint 3](changelog/sprint-3.md) - (2/12/2020 - 8/12/2020)**
   - Short changes 1
   - Short changes 2
