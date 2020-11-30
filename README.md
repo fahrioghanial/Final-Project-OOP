@@ -49,7 +49,7 @@ javac GoRide.java
 Selanjutnya jalankan aplikasi. <br>
 Terdapat dua cara untuk menjalankan app ini
 
-###1. Running tanpa menggunakan parameter
+### 1. Running tanpa menggunakan parameter
 ```
 java GoRide
 ```
@@ -59,7 +59,7 @@ Secara default akan terbentuk:
 - 5 driver pada random koordinat
 - 1 user pada random koordinat
 
-###2. Running menggunakan parameter
+### 2. Running menggunakan parameter
 ```
 java GoRide custommapsize
 ```
