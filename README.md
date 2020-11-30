@@ -40,7 +40,38 @@ estimasi harganya lalu akan ditampilkan rute jalan user ke tempat tujuan. Kemudi
 
 ## Running The App
 
-TO;DO with steps
+Nama main file adalah *GoRide.java*. 
+Compile terlebih dahulu file main tersebut dengan command:
+```
+javac GoRide.java
+```
+
+Selanjutnya jalankan aplikasi.
+Terdapat dua cara untuk menjalankan app ini
+
+###1. Running tanpa menggunakan parameter
+```
+java GoRide
+```
+
+Secara default akan terbentuk:
+- 20 x 20 map
+- 5 driver pada random koordinat
+- 1 user pada random koordinat
+
+###2. Running menggunakan parameter
+```
+java GoRide custommapsize
+```
+contoh:
+```
+java GoRide 15
+```
+
+Secara default akan terbentuk:
+- n x n map (custom size)
+- 5 driver pada random koordinat
+- 1 user pada random koordinat
 
 ## Classes Used
 
