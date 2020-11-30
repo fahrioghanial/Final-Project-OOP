@@ -40,13 +40,13 @@ estimasi harganya lalu akan ditampilkan rute jalan user ke tempat tujuan. Kemudi
 
 ## Running The App
 
-Nama main file adalah *GoRide.java*. 
+Nama main file adalah *GoRide.java* <br>
 Compile terlebih dahulu file main tersebut dengan command:
 ```
 javac GoRide.java
 ```
 
-Selanjutnya jalankan aplikasi.
+Selanjutnya jalankan aplikasi. <br>
 Terdapat dua cara untuk menjalankan app ini
 
 ###1. Running tanpa menggunakan parameter
