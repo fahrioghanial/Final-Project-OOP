@@ -23,9 +23,9 @@
 | 2.1 | Membuat window yang menampilkan driver terdekat dan estimasi harga           | Adam     |
 | 2.2 | Membuat window yang menampilkan rute jalan                                   | Chandra  |
 | 2.3 | Membuat button proceed layanan go-ride dan membuat algoritma proceed layanan | Fahrio   |
-| 3.1 | Merapihkan antarmuka                                                         | BangsKuy |
-| 3.2 | Mengimplementasikan Challenges Ideas                                         | BangsKuy |               
-| 3.3 | Finishing                                                                    | BangsKuy |
+| 3.1 | Merapihkan antarmuka                                                         | Fahrio   | 
+| 3.2 | Mengimplementasikan Challenges Ideas (Membuat Animasi)                       | Chandra  |
+| 3.3 | Membuat UML & Finishing                                                      | Adam     | 
 
 
 ## Sprint Backlog Plan (Sprint 1)
