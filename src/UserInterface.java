@@ -1,10 +1,9 @@
 import java.awt.Container;
-import java.awt.Dimension;
+import java.awt.BorderLayout;
 import javax.swing.JFrame;
+import javax.swing.JSpinner;
+import javax.swing.JLabel;
 import javax.swing.WindowConstants;
-import javax.swing.JPanel;
-import java.awt.*;
-import javax.swing.*;
 
 public class UserInterface implements Runnable {
 
@@ -12,6 +11,12 @@ public class UserInterface implements Runnable {
     private Avatar avatarUser;
     private Avatar[] avatarDriver = new Avatar[5];
     private int map;
+    private JSpinner x;
+    private JSpinner y;
+    private JLabel info;
+    private JLabel historyLabel;
+    private DrawingBoard drawingBoard;
+    private MenuPanel menuPanel;
 
     public UserInterface(Avatar avatarUser, Avatar[] avatarDriver, int map) {
         this.avatarUser = avatarUser;
@@ -25,52 +30,18 @@ public class UserInterface implements Runnable {
     @Override
     public void run() {
         frame = new JFrame("Go-Ride App");
-        frame.setPreferredSize(new Dimension(600, 600));
+        frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        DrawingBoard drawingBoard = new DrawingBoard(avatarUser, avatarDriver, map);
-
-        // frame.add(new DrawingBoard(avatarUser, avatarDriver, map));
-        JScrollPane scroll = new JScrollPane(drawingBoard);
-        scroll.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
-        frame.add(scroll);
+        drawingBoard = new DrawingBoard(avatarUser, avatarDriver, map);
+        frame.add(drawingBoard);
         createComponents(frame.getContentPane());
         frame.pack();
         frame.setVisible(true);
     }
 
     private void createComponents(Container container) {
-        // DrawingBoard drawingBoard = new DrawingBoard(avatarUser, avatarDriver, map);
-        // container.add(drawingBoard);
-        container.add(combinePanel(), BorderLayout.SOUTH);
-        // JScrollPane scroll = new JScrollPane(drawingBoard);
-
-        // scroll.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
-    }
-
-    private JPanel createPanel() {
-        JPanel panel = new JPanel(new GridLayout(1, 2));
-
-        panel.add(new JButton("Konfirmasi Tujuan"));
-        panel.add(new JButton("History"));
-        return panel;
-    }
-
-    private JPanel createPanel2() {
-        JPanel panel = new JPanel(new GridLayout(1, 4));
-
-        panel.add(new JLabel("Tujuan x: "));
-        panel.add(new JTextField());
-        panel.add(new JLabel("Tujuan y: "));
-        panel.add(new JTextField());
-        return panel;
-    }
-
-    private JPanel combinePanel() {
-        JPanel panel = new JPanel(new GridLayout(2, 1));
-
-        panel.add(createPanel2());
-        panel.add(createPanel());
-        return panel;
+        menuPanel = new MenuPanel(x, y, info, historyLabel, drawingBoard, map);
+        container.add(menuPanel.combinePanelFinal(), BorderLayout.EAST);
     }
 
     public JFrame getFrame() {

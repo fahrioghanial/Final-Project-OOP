@@ -1,96 +1,120 @@
 import java.awt.Color;
 import java.awt.Graphics;
-import java.awt.Dimension;
 import javax.swing.JPanel;
-
-import javafx.scene.effect.ColorAdjust;
+import java.util.ArrayList;
 
 public class DrawingBoard extends JPanel {
 
     private Avatar avatarUser;
     private Avatar[] avatarDriver = new Avatar[5];
-    private int map;
+    private Avatar driverDekat;
+    private ArrayList<String> history = new ArrayList<String>();
+    private int counterPerjalanan = 0;
+    private int xUserTemp;
+    private int yUserTemp;
+    private int mapSize;
+    private int harga;
+    private int xTujuan;
+    private int yTujuan;
+    private Boolean isConfirm;
+    private Map map;
+    private Pathways pathways;
+    private DrawingBoard drawingBoard = this;
 
-    public DrawingBoard(Avatar avatarUser, Avatar[] avatarDriver, int map) {
+    public DrawingBoard(Avatar avatarUser, Avatar[] avatarDriver, int mapSize) {
         this.setBackground(Color.GRAY);
         this.avatarUser = avatarUser;
         this.avatarDriver = avatarDriver;
-        this.map = map;
+        this.mapSize = mapSize;
+        this.isConfirm = false;
+    }
 
+    public void confirmKoordinat() {
+        this.isConfirm = true;
+        this.xUserTemp = (avatarUser.getX() - 5) / 18;
+        this.yUserTemp = this.getMapSize() - ((avatarUser.getY() - 23) / 18);
+        repaint();
+    }
+
+    public void proceed() {
+        this.isConfirm = false;
+        this.counterPerjalanan++;
+        history.add("Perjalanan ke-" + String.valueOf(counterPerjalanan) + "<br>Dari: (" + String.valueOf(xUserTemp)
+                + "," + String.valueOf(yUserTemp) + ")<br>Ke: (" + String.valueOf(xTujuan) + ","
+                + String.valueOf(yTujuan) + ")<br>");
+        repaint();
+    }
+
+    public void setTujuanX(int x) {
+        this.xTujuan = x;
+    }
+
+    public void setTujuanY(int y) {
+        this.yTujuan = y;
+    }
+
+    public int getTujuanX() {
+        return this.xTujuan;
+    }
+
+    public int getTujuanY() {
+        return this.yTujuan;
+    }
+
+    public int getMapSize() {
+        return this.mapSize;
+    }
+
+    public int getHarga() {
+        return this.harga;
+    }
+
+    public void setAvatarUser(Avatar avatarUser) {
+        this.avatarUser = avatarUser;
+    }
+
+    public void setAvatarDriver(Avatar[] avatarDriver) {
+        this.avatarDriver = avatarDriver;
+    }
+
+    public void setDriverTerdekat(Avatar driverDekat) {
+        this.driverDekat = driverDekat;
+    }
+
+    public Avatar getAvatarUser() {
+        return this.avatarUser;
+    }
+
+    public Avatar[] getAvatarDriver() {
+        return this.avatarDriver;
+    }
+
+    public Avatar getDriverTerdekat() {
+        return this.driverDekat;
+    }
+
+    public ArrayList<String> getHistory() {
+        return this.history;
+    }
+
+    public int getCounterPerjalanan() {
+        return this.counterPerjalanan;
     }
 
     @Override
     protected void paintComponent(Graphics graphics) {
         super.paintComponent(graphics);
-        int x = 23;
-        int y = 23;
-        int counterTitik = 0;
-        for (int i = 1; i <= this.map; i++) {
-            graphics.setColor(Color.WHITE);
-            graphics.drawOval(x, y, 5, 5);
-            if (i == this.map) {
-                x = x + 18;
-                y = 23;
-                i = 0;
-            } else {
-                y = y + 18;
-            }
-            counterTitik++;
-            if (counterTitik == this.map * this.map) {
-                break;
-            }
+        if (!isConfirm) {
+            // Gambar peta, driver, user
+            map = new Map(graphics, drawingBoard);
+            map.drawMap();
+        } else {
+            // Gambar peta, driver, user
+            map = new Map(graphics, drawingBoard);
+            map.drawMap();
+            // Gambar jalur pada drawing board
+            pathways = new Pathways(drawingBoard, graphics);
+            pathways.drawPathways();
         }
-        // graphics.drawRect(10, 10, map, map);
-
-        for (int i = 0; i < avatarDriver.length; i++) {
-            if (i == 0) {
-                graphics.setColor(Color.GREEN);
-            } else if (i == 1) {
-                graphics.setColor(Color.BLUE);
-            } else if (i == 2) {
-                graphics.setColor(Color.PINK);
-            } else if (i == 3) {
-                graphics.setColor(Color.YELLOW);
-            } else {
-                graphics.setColor(Color.RED);
-            }
-            avatarDriver[i].draw(graphics);
-        }
-
-        graphics.setColor(Color.BLACK);
-        avatarUser.draw(graphics);
-
-        // graphics.setColor(Color.GREEN);
-        // graphics.fillRect(0, 0, 10, 410);
-        // graphics.setColor(Color.GREEN);
-        // graphics.fillRect(390, 0, 10, 410);
-
-        // graphics.setColor(Color.BLACK);
-        // graphics.fillRect(0, 0, 400, 10);
-        // graphics.setColor(Color.BLACK);
-        // graphics.fillRect(0, 400, 400, 10);
-
-        // graphics.setColor(Color.GREEN);
-        // graphics.fillRect(30, 30, 20, 270);
-        // graphics.setColor(Color.GREEN);
-        // graphics.fillRect(70, 30, 20, 270);
-        // graphics.setColor(Color.GREEN);
-        // graphics.fillRect(110, 30, 20, 270);
-        // graphics.setColor(Color.GREEN);
-        // graphics.fillRect(150, 30, 20, 270);
-        // graphics.setColor(Color.GREEN);
-        // graphics.fillRect(190, 30, 20, 270);
-        // graphics.setColor(Color.GREEN);
-        // graphics.fillRect(230, 30, 20, 270);
-        // graphics.setColor(Color.GREEN);
-        // graphics.fillRect(270, 30, 20, 270);
-        // graphics.setColor(Color.GREEN);
-        // graphics.fillRect(310, 30, 20, 270);
-        // graphics.setColor(Color.GREEN);
-        // graphics.fillRect(350, 30, 20, 270);
-        // graphics.setColor(Color.BLACK);
-        // graphics.fillRect(30, 320, 340, 20);
-        // graphics.setColor(Color.BLACK);
-        // graphics.fillRect(30, 360, 340, 20);
     }
 }
