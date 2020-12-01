@@ -15,11 +15,11 @@
 
 ## Sprint 3 Backlog
 
-| ID  | Title/Desc                            | Asignee | Status |
-| --- | ------------------------------------- | ------- | ------ |
-| 3.1 | Merapihkan antarmuka                  | Fahrio  | PROSES |
-| 3.2 | Mengimplementasikan Challenges Ideas  | Chandra | PROSES |
-| 3.3 | Finishing                             | Adam    | PROSES |
+| ID  | Title/Desc                                              | Asignee | Status |
+| --- | ------------------------------------------------------- | ------- | ------ |
+| 3.1 | Merapihkan antarmuka                                    | Fahrio  | PROSES |
+| 3.2 | Mengimplementasikan Challenges Ideas (Membuat Animasi)  | Chandra | PROSES |
+| 3.3 | Membuat UML & Finishing                                 | Adam    | PROSES |
 
 
 
