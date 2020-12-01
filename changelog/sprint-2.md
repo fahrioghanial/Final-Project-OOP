@@ -30,3 +30,4 @@ Sprint kemarin dianggap terlalu sedikit sehingga diperlukan adanya penyesuaian t
 | --- | ---------- | ------- | 
 | 3.1 | Preparing the x | Jane Doe | 
 | 3.2 | Make the x | John Doe | 
+| 3.3 | Make the x | John Doe | 
