@@ -21,6 +21,10 @@
 | 3.2 | Mengimplementasikan Challenges Ideas  | Chandra | PROSES |
 | 3.3 | Finishing                             | Adam    | PROSES |
 
+
+
+## UML
+
 ## Retrospective 
 
 Sprint kemarin dianggap terlalu sedikit sehingga diperlukan adanya penyesuaian tugas. Lorem ipsum dolor sit amet
