@@ -35,8 +35,9 @@ estimasi harganya lalu akan ditampilkan rute jalan user ke tempat tujuan. Kemudi
   - Membuat button proceed layanan go-ride dan membuat algoritma proceed layanan
   
 - **[Sprint 3](changelog/sprint-3.md) - (2/12/2020 - 8/12/2020)**
-  - Short changes 1
-  - Short changes 2
+  - Merapihkan antarmuka
+  - Mengimplementasikan Challenges Ideas (Membuat Animasi)
+  - Membuat UML & Finishing 
 
 ## Running The App
 
