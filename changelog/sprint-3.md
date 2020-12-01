@@ -11,14 +11,15 @@
 ## Sprint Overview
 | Planned (n)   | Completed (n) |
 | ------------- |-------------- |
-| n             | n             |
+| 3             | 3             |
 
 ## Sprint 3 Backlog
 
-| ID  | Title/Desc | Asignee | Status |
-| --- | ---------- | ------- | ------ |
-| 3.1 | Preparing the x | Jane Doe | DONE |
-| 3.2 | Make the x | John Doe | FAILED |
+| ID  | Title/Desc                            | Asignee | Status |
+| --- | ------------------------------------- | ------- | ------ |
+| 3.1 | Merapihkan antarmuka                  | Fahrio  | PROSES |
+| 3.2 | Mengimplementasikan Challenges Ideas  | Chandra | PROSES |
+| 3.3 | Finishing                             | Adam    | PROSES |
 
 ## Retrospective 
 
