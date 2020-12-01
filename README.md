@@ -79,6 +79,6 @@ TO;DO
 
 UML image here
 
-## Notable Assumption and Design App Details
+## Notable Assumption and Design App Details.
 
 TO;DO
