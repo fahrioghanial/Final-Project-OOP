@@ -23,7 +23,8 @@
 
 ## Retrospective 
 
-Sprint kemarin dianggap terlalu sedikit. 
+Sprint kemarin dianggap terlalu sedikit.
+Kurangnya sumber di internet
 
 ## Next Sprint Backlog (Sprint 3)
 | ID  | Title/Desc                                              | Asignee | 
