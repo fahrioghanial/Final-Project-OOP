@@ -1,3 +1,5 @@
+package ui;
+
 import java.awt.Graphics;
 
 public class Avatar {

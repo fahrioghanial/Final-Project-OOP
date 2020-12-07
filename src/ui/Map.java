@@ -1,3 +1,5 @@
+package ui;
+
 import java.awt.Color;
 import java.awt.Graphics;
 
@@ -14,7 +16,6 @@ public class Map {
 
     public void drawMap() {
         // titik pojok kiri atas terletak pada koordinat 23,23 pada JPanel
-
         int x = 23;
         int y = 23;
         int counterTitik = 0;
@@ -56,7 +57,7 @@ public class Map {
             if (i == 0) {
                 graphics.setColor(Color.GREEN);
             } else if (i == 1) {
-                graphics.setColor(Color.BLUE);
+                graphics.setColor(Color.MAGENTA);
             } else if (i == 2) {
                 graphics.setColor(Color.PINK);
             } else if (i == 3) {
@@ -68,7 +69,7 @@ public class Map {
         }
         drawingBoard.setAvatarDriver(avatarDriver);
         // Meng-spawn avatar user
-        graphics.setColor(Color.BLACK);
+        graphics.setColor(Color.WHITE);
         avatarUser = drawingBoard.getAvatarUser();
         avatarUser.draw(graphics);
         drawingBoard.setAvatarUser(avatarUser);

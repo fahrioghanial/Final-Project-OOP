@@ -1,3 +1,5 @@
+package ui;
+
 import java.awt.Container;
 import java.awt.BorderLayout;
 import javax.swing.JFrame;
@@ -22,9 +24,6 @@ public class UserInterface implements Runnable {
         this.avatarUser = avatarUser;
         this.avatarDriver = avatarDriver;
         this.map = map;
-    }
-
-    public UserInterface() {
     }
 
     @Override

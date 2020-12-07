@@ -1,3 +1,5 @@
+package action;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
@@ -5,6 +7,7 @@ import javax.swing.JLabel;
 import javax.swing.JSpinner;
 import javax.swing.JPanel;
 import java.util.Arrays;
+import ui.*;
 
 public class ConfirmAction implements ActionListener {
     private JSpinner x;
@@ -149,7 +152,7 @@ public class ConfirmAction implements ActionListener {
         String info = "<html><ul><li>Koordinat Tujuan (x,y) : (" + x.getValue().toString() + ","
                 + y.getValue().toString() + ")</li><li>Driver Terdekat : "
                 + this.drawingBoard.getDriverTerdekat().getName() + "</li><li>Harga : " + String.valueOf(this.harga)
-                + " (Harga per titik : 100) </li></ul></html>";
+                + " (Harga per titik adalah 100) </li></ul></html>";
         this.destination.setText(info);
         this.panel.add(proses);
     }

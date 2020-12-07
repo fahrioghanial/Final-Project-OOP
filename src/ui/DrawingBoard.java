@@ -1,6 +1,9 @@
+package ui;
+
 import java.awt.Color;
 import java.awt.Graphics;
 import javax.swing.JPanel;
+import javax.swing.Timer;
 import java.util.ArrayList;
 
 public class DrawingBoard extends JPanel {
@@ -10,38 +13,38 @@ public class DrawingBoard extends JPanel {
     private Avatar driverDekat;
     private ArrayList<String> history = new ArrayList<String>();
     private int counterPerjalanan = 0;
-    private int xUserTemp;
-    private int yUserTemp;
     private int mapSize;
-    private int harga;
     private int xTujuan;
     private int yTujuan;
-    private Boolean isConfirm;
+    private String sesi;
+    private Timer timer;
+    private DrawingBoard drawingBoard = this;
     private Map map;
     private Pathways pathways;
-    private DrawingBoard drawingBoard = this;
 
     public DrawingBoard(Avatar avatarUser, Avatar[] avatarDriver, int mapSize) {
-        this.setBackground(Color.GRAY);
+        this.setBackground(Color.DARK_GRAY);
         this.avatarUser = avatarUser;
         this.avatarDriver = avatarDriver;
         this.mapSize = mapSize;
-        this.isConfirm = false;
+        this.sesi = "kosong";
+        this.timer = new Timer(1, new Animation(drawingBoard));
+        this.timer.start();
     }
 
     public void confirmKoordinat() {
-        this.isConfirm = true;
-        this.xUserTemp = (avatarUser.getX() - 5) / 18;
-        this.yUserTemp = this.getMapSize() - ((avatarUser.getY() - 23) / 18);
+        this.sesi = "confirm";
         repaint();
     }
 
     public void proceed() {
-        this.isConfirm = false;
+        this.sesi = "proceed";
         this.counterPerjalanan++;
-        history.add("Perjalanan ke-" + String.valueOf(counterPerjalanan) + "<br>Dari: (" + String.valueOf(xUserTemp)
-                + "," + String.valueOf(yUserTemp) + ")<br>Ke: (" + String.valueOf(xTujuan) + ","
-                + String.valueOf(yTujuan) + ")<br>");
+        int xUser = (avatarUser.getX() - 5) / 18;
+        int yUser = this.getMapSize() - ((avatarUser.getY() - 23) / 18);
+        history.add("Perjalanan ke-" + String.valueOf(counterPerjalanan) + "<br>Dari: (" + String.valueOf(xUser) + ","
+                + String.valueOf(yUser) + ")<br>Ke: (" + String.valueOf(xTujuan) + "," + String.valueOf(yTujuan)
+                + ")<br>");
         repaint();
     }
 
@@ -51,6 +54,22 @@ public class DrawingBoard extends JPanel {
 
     public void setTujuanY(int y) {
         this.yTujuan = y;
+    }
+
+    public void setSesi(String sesi) {
+        this.sesi = sesi;
+    }
+
+    public void setAvatarUser(Avatar avatarUser) {
+        this.avatarUser = avatarUser;
+    }
+
+    public void setAvatarDriver(Avatar[] avatarDriver) {
+        this.avatarDriver = avatarDriver;
+    }
+
+    public void setDriverTerdekat(Avatar driverDekat) {
+        this.driverDekat = driverDekat;
     }
 
     public int getTujuanX() {
@@ -65,20 +84,8 @@ public class DrawingBoard extends JPanel {
         return this.mapSize;
     }
 
-    public int getHarga() {
-        return this.harga;
-    }
-
-    public void setAvatarUser(Avatar avatarUser) {
-        this.avatarUser = avatarUser;
-    }
-
-    public void setAvatarDriver(Avatar[] avatarDriver) {
-        this.avatarDriver = avatarDriver;
-    }
-
-    public void setDriverTerdekat(Avatar driverDekat) {
-        this.driverDekat = driverDekat;
+    public String getSesi() {
+        return this.sesi;
     }
 
     public Avatar getAvatarUser() {
@@ -104,11 +111,11 @@ public class DrawingBoard extends JPanel {
     @Override
     protected void paintComponent(Graphics graphics) {
         super.paintComponent(graphics);
-        if (!isConfirm) {
+        if (sesi == "kosong" || sesi == "proceed") {
             // Gambar peta, driver, user
             map = new Map(graphics, drawingBoard);
             map.drawMap();
-        } else {
+        } else if (sesi == "confirm") {
             // Gambar peta, driver, user
             map = new Map(graphics, drawingBoard);
             map.drawMap();

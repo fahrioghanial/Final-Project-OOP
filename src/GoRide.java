@@ -1,4 +1,5 @@
 import javax.swing.SwingUtilities;
+import ui.*;
 
 public class GoRide {
     public static void main(String[] args) {
@@ -70,18 +71,16 @@ public class GoRide {
         avatarDriver[4] = avatarGab[5];
 
         avatarDriver[0].setName("Mamang Hijau");
-        avatarDriver[1].setName("Mamang Biru");
+        avatarDriver[1].setName("Mamang Magenta");
         avatarDriver[2].setName("Mamang Pink");
         avatarDriver[3].setName("Mamang Kuning");
         avatarDriver[4].setName("Mamang Merah");
 
         if (args.length != 0) {
             int argsInt = Integer.parseInt(args[0]);
-            // System.out.println(driverDekat.getName());
             UserInterface ui = new UserInterface(avatarUser, avatarDriver, argsInt);
             SwingUtilities.invokeLater(ui);
         } else {
-            // System.out.println(driverDekat.getName());
             UserInterface ui = new UserInterface(avatarUser, avatarDriver, 20);
             SwingUtilities.invokeLater(ui);
         }

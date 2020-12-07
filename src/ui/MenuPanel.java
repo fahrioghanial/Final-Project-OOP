@@ -1,3 +1,5 @@
+package ui;
+
 import java.awt.GridLayout;
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
@@ -8,6 +10,7 @@ import javax.swing.JSpinner;
 import javax.swing.JLabel;
 import javax.swing.SpinnerNumberModel;
 import javax.swing.BoxLayout;
+import action.*;
 
 public class MenuPanel extends JPanel {
     private JSpinner x;
@@ -42,7 +45,7 @@ public class MenuPanel extends JPanel {
         BoxLayout layout = new BoxLayout(panel, BoxLayout.Y_AXIS);
         panel.setLayout(layout);
         info = new JLabel();
-        JLabel userInfo = new JLabel("<html><br><h3>User : Avatar Hitam</h3></html>");
+        JLabel userInfo = new JLabel("<html><br><h3>User : Avatar Putih</h3></html>");
         JButton buttonConfirm = new JButton("Konfirmasi Tujuan");
         JButton buttonHistory = new JButton("History");
         JButton buttonProses = new JButton("Proses Layanan");
