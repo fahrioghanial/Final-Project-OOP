@@ -17,9 +17,9 @@
 
 | ID  | Title/Desc                                              | Asignee | Status |
 | --- | ------------------------------------------------------- | ------- | ------ |
-| 3.1 | Merapihkan antarmuka                                    | Fahrio  | PROSES |
-| 3.2 | Mengimplementasikan Challenges Ideas (Membuat Animasi)  | Chandra | PROSES |
-| 3.3 | Membuat UML & Finishing                                 | Adam    | PROSES |
+| 3.1 | Merapihkan antarmuka                                    | Fahrio  |  DONE  |
+| 3.2 | Mengimplementasikan Challenges Ideas (Membuat Animasi)  | Chandra |  DONE  |
+| 3.3 | Membuat UML & Finishing                                 | Adam    |  DONE  |
 
 
 
