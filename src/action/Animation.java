@@ -81,7 +81,7 @@ public class Animation implements ActionListener {
                 int[] indexKoordinatRandom = new int[2];
                 for (int i = 0; i < 2; i++) {
                     int randomInt = (int) (Math.random() * ((koordinatRandom.length - 1) - 0 + 1) + 0);
-                    indexKoordinatRandom[i] = randomInt;
+                    indexKoordinatRandom[i] = randomInt; 
                 }
                 drawingBoard.getAvatarDriver()[index].setX(koordinatRandom[indexKoordinatRandom[0]]);
                 drawingBoard.getAvatarDriver()[index].setY(koordinatRandom[indexKoordinatRandom[1]]);
