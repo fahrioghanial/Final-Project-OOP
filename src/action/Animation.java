@@ -1,7 +1,8 @@
-package ui;
+package action;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import ui.*;
 
 public class Animation implements ActionListener {
     private DrawingBoard drawingBoard;

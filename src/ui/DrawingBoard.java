@@ -5,6 +5,7 @@ import java.awt.Graphics;
 import javax.swing.JPanel;
 import javax.swing.Timer;
 import java.util.ArrayList;
+import action.*;
 
 public class DrawingBoard extends JPanel {
 
