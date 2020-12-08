@@ -41,6 +41,7 @@ estimasi harganya lalu akan ditampilkan rute jalan user ke tempat tujuan. Kemudi
 
 ## Running The App
 
+Main file terdapat pada folder src <br>
 Nama main file adalah _GoRide.java_ <br>
 Compile terlebih dahulu file main tersebut dengan command:
 
@@ -114,7 +115,8 @@ Untuk membuat objek jalur<br>
 **6. UserInterface (UserInterface.java)**<br>
 User Interface yang berisi drawing board dan menu panel<br>
 
-UML image here
+### UML
+![ashiap](images/dont-open.png)
 
 ## Notable Assumption and Design App Details.
 
@@ -142,4 +144,4 @@ UML image here
 - Ketika _user_ menekan _button_ "Proses Layanan" akan terdapat:
   - _Button_ "Pesan Lagi"
   - Animasi _driver_ menghampiri _user_
-  - Animasi _driver_ dan _user_ menuju koordinat tujuan (setelah sampai, driver akan berpindah ke koordinat _random_.
+  - Animasi _driver_ dan _user_ menuju koordinat tujuan (setelah sampai, driver akan berpindah ke koordinat _random_).
