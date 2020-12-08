@@ -24,7 +24,24 @@
 
 
 ## UML
-
+![ashiap](images/dont-open.png)
+![ashiap](images/dont-open.png)
+![ashiap](images/dont-open.png)
+![ashiap](images/dont-open.png)
+![ashiap](images/dont-open.png)
+![ashiap](images/dont-open.png)
+![ashiap](images/dont-open.png)
+![ashiap](images/dont-open.png)
+![ashiap](images/dont-open.png)
+![ashiap](images/dont-open.png)
+![ashiap](images/dont-open.png)
+![ashiap](images/dont-open.png)
+![ashiap](images/dont-open.png)
+![ashiap](images/dont-open.png)
+![ashiap](images/dont-open.png)
+![ashiap](images/dont-open.png)
+![ashiap](images/dont-open.png)
+![ashiap](images/dont-open.png)
 ## Retrospective 
 
 Sprint kemarin dianggap terlalu sedikit sehingga diperlukan adanya penyesuaian tugas. Lorem ipsum dolor sit amet
