@@ -24,6 +24,7 @@
 
 
 ## UML
+![uml](images/uml.png)
 
 ## Retrospective 
 
