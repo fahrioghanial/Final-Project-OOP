@@ -42,7 +42,7 @@ estimasi harganya lalu akan ditampilkan rute jalan user ke tempat tujuan. Kemudi
 ## Running The App
 
 Main file terdapat pada folder src <br>
-Nama main file adalah _GoRide.java_ <br>
+Nama main file adalah _Main.java_ <br>
 Compile terlebih dahulu file main tersebut dengan command:
 
 ```
