@@ -1,7 +1,7 @@
 import javax.swing.SwingUtilities;
 import ui.*;
 
-public class GoRide {
+public class Main {
     public static void main(String[] args) {
         int[] koordinatRandom;
         if (args.length != 0) {
