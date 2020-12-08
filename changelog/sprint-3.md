@@ -25,7 +25,11 @@
 
 ## UML
 
+![uml](images/uml.png)
+
 ## Retrospective 
 
-Sprint kemarin dianggap terlalu sedikit sehingga diperlukan adanya penyesuaian tugas. Lorem ipsum dolor sit amet
+Kami mengerjakannya cukup baik.
+Untuk kedepannya semoga lebih baik lagi terutama dalam UInya.
+
 
