@@ -76,10 +76,58 @@ Secara default akan terbentuk:
 
 ## Classes Used
 
-TO;DO
+**1. GoRide (Goride.java)**
+Program Utama
+
+### Folder action
+**1. Animation (Animation.java)**
+*Action event listener* dari class Timer, untuk menampilkan animasi
+**2. ConfirmAction (ConfirmAction.java)**
+*Action event listener* dari button "Konfirmasi Tujuan"
+**3. HistoryAction (HistoryAction.java)**
+*Action event listener* dari button "History"
+**4. OrderAgainAction (OrderAgainAction.java)**
+*Action event listener* dari button "Pesan Lagi"
+**5. ProceedAction (ProceedAction.java)**
+*Action event listener* dari button "Proses Layanan"
+
+
+### Folder ui
+**1. Avatar (Avatar.java)**
+Untuk membuat objek avatar user dan avatar driver
+**2. DrawingBoard (DrawingBoard.java)**
+Drawing board untuk menampilkan peta, jalur, user, dan driver
+**3. Map (Map.java)**
+Untuk membuat objek peta
+**4. MenuPanel (MenuPanel.java)**
+*Nested container object* dari menu-menu yang terdapat pada app
+**5. Pathways (Pathways.java)**
+Untuk membuat objek jalur
+**6. UserInterface (UserInterface.java)**
+User Interface yang berisi drawing board dan menu panel
 
 UML image here
 
 ## Notable Assumption and Design App Details.
-
-TO;DO
+### Saat Aplikasi Dijalankan
+  - Terdapat titik titik koordinat *map* yang ukurannya dapat disesuaikan dengan keinginan *user* (ukuran default : 20x20)
+  - Terdapat 1 avatar *user* yang berwarna Putih dan 5 avatar *driver* yang berwarna Hijau, Magenta, Pink, Kuning, Merah. Avatar-avatar tersebut akan berada pada koordinat *random*
+  - Terdapat garis untuk koordinat kartesius yang berwarna oranye
+  - Terdapat menu-menu:
+    - *Spinner* untuk memilih tujuan x pada koordinat kartesius
+    - *Spinner* untuk memilih tujuan y pada koordinat kartesius
+    - *Button* "Konfirmasi Tujuan" untuk mengkonfirmasi tujuan
+    - *Button* "History" untuk melihat riwayat perjalanan.
+### Detail Aplikasi
+  - Titik pojok kiri atas terletak pada koordinat 23,23 (koordinat JPanel) dengan jarak antar titik adalah 18 (koordinat JPanel)
+  - Riwayat perjalanan akan terhapus ketika aplikasi ditutup
+  - Ketika *user* menekan *button* "Konfirmasi Tujuan" akan terdapat:
+    - Keterangan koordinat tujuan
+    - Keterangan driver terdekat
+    - Keterangan harga
+    - Titik-titik putih pada map yang menunjukkan jalur yang akan ditempuh dari koordinat *user* ke koordinat tujuan
+    - *Button* "Proses Layanan".
+  - Ketika *user* menekan *button* "Proses Layanan" akan terdapat:
+    - *Button* "Pesan Lagi"
+    - Animasi *driver* menghampiri *user*
+    - Animasi *driver* dan *user* menuju koordinat tujuan (setelah sampai, driver akan berpindah ke koordinat *random*.
