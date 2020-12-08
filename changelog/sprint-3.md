@@ -25,8 +25,6 @@
 
 ## UML
 
-![uml](images/uml.png) 
-
 ## Retrospective 
 
 Kami mengerjakannya cukup baik.
