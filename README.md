@@ -46,7 +46,7 @@ Nama main file adalah _GoRide.java_ <br>
 Compile terlebih dahulu file main tersebut dengan command:
 
 ```
-javac GoRide.java
+javac Main.java
 ```
 
 Selanjutnya jalankan aplikasi. <br>
@@ -55,7 +55,7 @@ Terdapat dua cara untuk menjalankan app ini
 ### 1. Running tanpa menggunakan parameter
 
 ```
-java GoRide
+java Main
 ```
 
 Secara default akan terbentuk:
@@ -67,13 +67,13 @@ Secara default akan terbentuk:
 ### 2. Running menggunakan parameter
 
 ```
-java GoRide custommapsize
+java Main custommapsize
 ```
 
 contoh:
 
 ```
-java GoRide 15
+java Main 15
 ```
 
 Secara default akan terbentuk:
@@ -84,7 +84,7 @@ Secara default akan terbentuk:
 
 ## Classes Used
 
-**1. GoRide (Goride.java)**<br>
+**1. Main (Main.java)**<br>
 Program Utama
 
 ### Folder action
