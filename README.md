@@ -121,6 +121,10 @@ User Interface yang berisi drawing board dan menu panel<br>
 
 ## Notable Assumption and Design App Details.
 
+### Tampilan Aplikasi
+
+![ui](images/ui.png)
+
 ### Saat Aplikasi Dijalankan
 
 - Terdapat titik titik koordinat _map_ yang ukurannya dapat disesuaikan dengan keinginan _user_ (ukuran default : 20x20)
